@@ -116,6 +116,26 @@ h6 {
   padding: 15px;
   margin-bottom: 24px;
 }
+/* Parent container (video section) */
+.intro-video-section {
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Use full viewport height */
+  width: 100%; /* Ensure the container takes full width */
+  position: relative; /* Optional, if you have absolute positioning inside */
+}
+
+.intro-video { 
+  object-fit: cover; /* Make the video cover the entire container */
+  background-color: black; /* Set the background to black */
+  display: block; /* Ensure there's no extra space below the video */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  width: 640px; /* Set a specific resolution */
+  height: 360px; /* Adjust according to the aspect ratio */
+}
+
 
 .php-email-form .loading:before {
   content: "";
